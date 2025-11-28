@@ -10,7 +10,12 @@
     <script type="module" src="https://d1w6liik5y6dkm.cloudfront.net/client-side/2/89ea2e49-5a04-4dd2-b129-e48f0b8a0bdf.js"></script>
 </head>
 <body>
+    <!--Be Compliance-->
+    <div id="cookie-banner" style="display: none;">
+        <p>Usamos cookies. <button onclick="aceitarCookies()">Aceitar</button></p>
+    </div>
     <button type="button" data-cc="show-preferencesModal">Mostrar preferências de cookie</button>
+    <!--Fim do Be Compliance-->
     <!--MENU SUPERIOR-->
     <div id="menu-superior">
         <a href="https://www.escoladnc.com.br/"><img src="imagens/logo.svg" id="logo" alt="ERROR"></a>
@@ -79,6 +84,23 @@
 
 </div>
 <script src="index.js"></script>
+<!--tag de cookies-->
+<script>
+    function getCookie(name) { /* ... função de leitura ... */ }
+
+    function aceitarCookies() {
+        // Define o cookie que indica consentimento
+        document.cookie = "consentimento_cookies=aceito; max-age=" + (365 * 24 * 60 * 60) + "; path=/";
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Mostra o banner se o cookie de consentimento não existir
+    window.onload = function() {
+        if (!getCookie("consentimento_cookies")) {
+            document.getElementById('cookie-banner').style.display = 'block';
+        }
+    }
+</script>
 <a href="javascript:void" onclick="window.sendAdoptCommand('open')">Mostrar Aviso</a>
 </body>
 
