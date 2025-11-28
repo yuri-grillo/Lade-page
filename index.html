@@ -78,23 +78,6 @@
 
 </div>
 <script src="index.js"></script>
-<!--tag de cookies-->
-<script>
-    function getCookie(name) { /* ... função de leitura ... */ }
-
-    function aceitarCookies() {
-        // Define o cookie que indica consentimento
-        document.cookie = "consentimento_cookies=aceito; max-age=" + (365 * 24 * 60 * 60) + "; path=/";
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    // Mostra o banner se o cookie de consentimento não existir
-    window.onload = function() {
-        if (!getCookie("consentimento_cookies")) {
-            document.getElementById('cookie-banner').style.display = 'block';
-        }
-    }
-</script>
 <a href="javascript:void" onclick="window.sendAdoptCommand('open')">Mostrar Aviso</a>
 </body>
 
