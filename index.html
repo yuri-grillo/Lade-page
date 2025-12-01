@@ -6,99 +6,80 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">
     <link rel="stylesheet" href="style.css">
     <title>Escola DNC</title>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=SEU_ID_GOOGLE_ANALYTICS"></script>
+    <!--SCRIPT BE COMPLIANCE-->
+    <script type="module" src="https://d1w6liik5y6dkm.cloudfront.net/client-side/2/d2ad5821-e59c-476f-bad2-d29a1e10e6a4.js"></script>
+    <!--FIM SCRIPT BE COMPLIANCE-->
+    <!--TAG GOOGLE ADS-->
+    <script async src="www.googletagmanager.com"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'SEU_ID_GOOGLE_ANALYTICS');
+      gtag('config', 'AW-SEU_ID');
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-SEU_ID_GOOGLE_ADS"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'AW-SEU_ID_GOOGLE_ADS'); // TAG DE CONVERSÃO PRINCIPAL
-      
-      // EX: TAG DE CONVERSÃO ESPECÍFICA (opcional)
-      // gtag('event', 'conversion', {'send_to': 'AW-SEU_ID_GOOGLE_ADS/SEU_ROTULO_DE_CONVERSAO'});
-    </script>
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', 'SEU_ID_META_PIXEL'); // Substitua pelo seu ID real
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=SEU_ID_META_PIXEL&ev=PageView&noscript=1"
-    /></noscript>
-    <script>
-        !function (w, d, t) {
-          w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,n){t[n]=function(){t.push([n].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var n=ttq.instances.length,r=0;r<ttq.methods.length;r++)ttq.setAndDefer(ttq.instances[n],ttq.methods[r]);return ttq.instances[n].ready=function(){ttq.push(["instanceReady",n])},ttq.instances[n].push(["load",t]),ttq.instances[n]};ttq.instances=[];ttq.load=function(n){ttq.instances.push(ttq.instance(n))};
-          ttq.load('SEU_ID_TIKTOK_PIXEL'); // Substitua pelo seu ID real
-          ttq.page();
-        }(window, document, 'ttq');
-    </script>
-    </head>
+    <!--TAG GOOGLE ADS-->
+</head>
 <body>
+    <!--COOKIES BE COMPLIANCE-->
+
+    <!--FIM COOKIES BE COMPLIANCE-->
+    
+    <!--MENU SUPERIOR-->
     <div id="menu-superior">
         <a href="https://www.escoladnc.com.br/"><img src="imagens/logo.svg" id="logo" alt="ERROR"></a>
         <h1 id="titulo-MenuSuperior">Dê os primeiros passos da <br>
         sua carreira em Tecnologia
         </h1>
         <p id="texto-menusuperior">Inscreva-se no curso gratuito de Introdução à<br>
-          Tecnologia da DNC School e aprenda os principais<br>
-          fundamentos para construir experiências efetivas. 
+         Tecnologia da DNC School e aprenda os principais<br>
+         fundamentos para construir experiências efetivas. 
         </p>
     </div>
     
     
+    <!--MENU INFORMARCIONAL-->
     <div id="menu-informacional" >
     <p class="texto-informativo"> <img src="icones/registro.svg" alt="" class="icone" id="registro">Certificado de conclusão</p>
-    <p class="texto-informativo"> <img src="icones/relogio.svg" alt="" class="icone" id="relogio">4 horas de conteúdo</p>
+    <p class="texto-informativo">  <img src="icones/relogio.svg" alt="" class="icone" id="relogio">4 horas de conteúdo</p>
     <p class="texto-informativo"> <img src="icones/camera.svg" alt="" class="icone" id="camera">Aulas online gravadas</p>
     </div>
 
 
+    <!--SEÇÃO VIDEO-->
     <div id="seçãovideo">
         <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/ITxGkd9h4n4" title="DNC - A escola inovadora que forma profissionais de alta perfomance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <div><h1 id="titulovideo">Aprenda com especialistas e <br>
-        comece seu primeiro projeto</h1><br><br>
+    comece seu primeiro projeto</h1><br><br>
     
     <p id="textovideo">Conheça o processo de desenvolvimento e entenda como utilizar <br>
         os principais métodos e ferramentas da área para resolver <br>
-          problemas complexos. <br><br>
+         problemas complexos. <br><br>
 
-        Conquiste seu certificado e desenvolva um projeto prático para <br>
+       Conquiste seu certificado e desenvolva um projeto prático para <br>
         aplicar seus conhecimentos.</p>
     </div>
 </div> 
 
+<!--CARROSSEL-->
 <div id="carrossel">
   <h1 id="titulocarrossel">Mais de 500 alunos já iniciaram seus estudos</h1>
+ <!--DIVISÃO DE CARDS-->
   <div id="divcards">
 
     <img id="setaesquerda" class="seta" onclick="RolarParaEsquerda()" src="icones/setaesquerda.svg" alt="">
     <img id="leonardo" class="cards" src="cards/leonardo.svg" alt=""> 
     <img id="samantha" class="cards" src="cards/samantha.svg" alt="">
     <img id="bruna" class="cards" src="cards/bruna.svg" alt="">
-    <img id="setadireita" class="seta" onclick="RolarParaDireita()" class="seta" src="icones/setadireita.svg">
-    
+    <img id="setadireita" class="seta" onclick="RolarParaDireita()" class="seta" src="icones/setadireita.svg"">
+   
 </div>
 </div>
-  
+ 
 
-<div id="formulario">
+<!--Formulario-->
+ <div id="formulario">
     <h1 id="tituloformulario">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
     <form action="https://api.sheetmonkey.io/form/r2GooGfx5u6HKPkxYxdwqh" method="post">
         <input type="text" placeholder="Nome" name="Name" required> <br>
