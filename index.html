@@ -5,40 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">
     <link rel="stylesheet" href="style.css">
-    <title>Escola DNC</title>
-    <!--COOKIES BE COMPLIANCE-->
-    
-    <!--FIM COOKIES BE COMPLIANCE-->
-    <!--TAG GOOGLE ADS-->
-    <script async src="www.googletagmanager.com"></script>
+    <title>Escola DNC - Teste de Cookies</title>
+
+    <script>
+        // Este script cria cookies falsos no navegador para o scanner achar
+        document.cookie = "_ga=GA1.1.123456789; path=/; max-age=31536000; SameSite=Lax"; // Simula Google Analytics
+        document.cookie = "_fbp=fb.1.1699999999; path=/; max-age=7776000; SameSite=Lax"; // Simula Facebook
+        document.cookie = "_hjid=567890-test; path=/; max-age=31536000"; // Simula Hotjar
+        document.cookie = "marketing_custom=promocao_v2; path=/"; // Cookie de Marketing
+        console.log("Cookies de teste gerados com sucesso.");
+    </script>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TESTE123"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
-      gtag('config', 'AW-SEU_ID');
+      gtag('config', 'G-TESTE123'); // ID Falso
     </script>
-    <!--TAG GOOGLE ADS-->
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '123456789012345'); // ID Falso
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=123456789012345&ev=PageView&noscript=1"
+    /></noscript>
+
+    <script type="text/javascript">
+    _linkedin_partner_id = "999999"; // ID Falso
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script>
+    <script type="text/javascript">
+    (function(l) {
+    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+    window.lintrk.q=[]}
+    var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";b.async = true;
+    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b, s);})(window.lintrk);
+    </script>
+
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:9999999,hjsv:6}; // ID Falso
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
 </head>
 <body>
-    <!--COOKIES BE COMPLIANCE-->
-
-    <!--FIM COOKIES BE COMPLIANCE-->
     
-    <!--MENU SUPERIOR-->
+    <script>
+        // TikTok Pixel Fictício
+        !function (w, d, t) {
+          w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq.methods[i],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+          ttq.load('C3PO_R2D2_FAKE_ID');
+          ttq.page();
+        }(window, document, 'ttq');
+    </script>
+
+
     <div id="menu-superior">
         <a href="https://www.escoladnc.com.br/"><img src="imagens/logo.svg" id="logo" alt="ERROR"></a>
         <h1 id="titulo-MenuSuperior">Dê os primeiros passos da <br>
         sua carreira em Tecnologia
         </h1>
         <p id="texto-menusuperior">Inscreva-se no curso gratuito de Introdução à<br>
-         Tecnologia da DNC School e aprenda os principais<br>
-         fundamentos para construir experiências efetivas. 
+          Tecnologia da DNC School e aprenda os principais<br>
+          fundamentos para construir experiências efetivas. 
         </p>
     </div>
     
     
-    <!--MENU INFORMARCIONAL-->
     <div id="menu-informacional" >
     <p class="texto-informativo"> <img src="icones/registro.svg" alt="" class="icone" id="registro">Certificado de conclusão</p>
     <p class="texto-informativo">  <img src="icones/relogio.svg" alt="" class="icone" id="relogio">4 horas de conteúdo</p>
@@ -46,7 +100,6 @@
     </div>
 
 
-    <!--SEÇÃO VIDEO-->
     <div id="seçãovideo">
         <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/ITxGkd9h4n4" title="DNC - A escola inovadora que forma profissionais de alta perfomance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -58,15 +111,13 @@
          problemas complexos. <br><br>
 
        Conquiste seu certificado e desenvolva um projeto prático para <br>
-        aplicar seus conhecimentos.</p>
+       aplicar seus conhecimentos.</p>
     </div>
 </div> 
 
-<!--CARROSSEL-->
 <div id="carrossel">
   <h1 id="titulocarrossel">Mais de 500 alunos já iniciaram seus estudos</h1>
- <!--DIVISÃO DE CARDS-->
-  <div id="divcards">
+ <div id="divcards">
 
     <img id="setaesquerda" class="seta" onclick="RolarParaEsquerda()" src="icones/setaesquerda.svg" alt="">
     <img id="leonardo" class="cards" src="cards/leonardo.svg" alt=""> 
@@ -78,8 +129,7 @@
 </div>
  
 
-<!--Formulario-->
- <div id="formulario">
+<div id="formulario">
     <h1 id="tituloformulario">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
     <form action="https://api.sheetmonkey.io/form/r2GooGfx5u6HKPkxYxdwqh" method="post">
         <input type="text" placeholder="Nome" name="Name" required> <br>
